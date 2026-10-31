@@ -1,0 +1,18 @@
+Codex Meter · macOS
+
+安装：双击「安装.command」，等待显示安装完成。
+启用：按 ⌘Q 完全退出 Codex，再从原图标打开，等待 5–10 秒。
+查看状态：双击「查看状态.command」。
+卸载：双击「卸载.command」。
+
+请先安装并登录 Codex。安装器优先使用客户端自带的 Node.js 24+，
+通常不需要额外安装 Node 或执行 npm install。
+
+支持 Apple Silicon 和 Intel。安装不会关闭现有工作窗口。
+安装后可以删除下载和解压文件，运行文件保存在当前用户的 Application Support 中。
+
+安装包未经 Apple 公证。若 macOS 阻止打开，请查看系统设置的
+「隐私与安全性」中是否提供「仍要打开」，勿关闭系统级安全保护。
+
+SHA256 校验信息随 Release 发布。详细要求、隐私与兼容性见 README.md。
+项目与下载：https://github.com/dongV-x/codex-meter/releases

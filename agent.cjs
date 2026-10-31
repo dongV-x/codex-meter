@@ -656,7 +656,7 @@ function windowsCodexCandidates(appPath) {
     path.join(root, 'resources', 'codex-cli', 'codex.exe')];
 }
 
-var AGENT_VERSION = '0.9.4-dongv.1';
+var AGENT_VERSION = '0.9.4-dongv.2';
 
 function parseArgs(argv) {
   const options = {

@@ -5,7 +5,7 @@ const os = require('node:os');
 const { execFileSync, spawn } = require('node:child_process');
 const { resolveCodexBin, isMainWindow, installUsageBadge } = require('./agent.cjs');
 const {acquireLock,rejectAutomaticUpdate,disableOwnedUpdates,ownedSnapshot,inspectOwnedUpdates}=require('./updater/core.cjs');
-const VERSION='0.9.4-dongv.1';
+const VERSION='0.9.4-dongv.2';
 const AUTO_UPDATE=false;
 const home = os.homedir();
 const app = process.env.CODEX_BADGE_APP || ['/Applications/ChatGPT.app','/Applications/Codex.app',path.join(home,'Applications/Codex.app'),path.join(home,'Applications/ChatGPT.app')].find(candidate => { try { resolveCodexBin(undefined,candidate); return true; } catch { return false; } }) || '/Applications/Codex.app';
