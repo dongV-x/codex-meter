@@ -13,7 +13,7 @@ FILES = (
     'agent.cjs', 'manage.cjs', 'LICENSE', 'README.md', 'CHANGELOG.md', '先读我.txt',
     '安装.command', '查看状态.command', '卸载.command', 'scripts/mac-entry.sh',
     'macos/startup/bridge', 'macos/startup/controller.cjs', 'macos/startup/watch.cjs',
-    'updater/core.cjs', 'updater/worker.cjs', 'updater/run.sh', 'assets/readme/hero.svg',
+    'updater/core.cjs', 'updater/worker.cjs', 'updater/run.sh', 'assets/readme/codex-sidebar.png',
 )
 
 

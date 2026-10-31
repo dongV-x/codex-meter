@@ -39,6 +39,31 @@ test('未知套餐、反向窗口顺序和其他额度桶不会误导显示',()=
   assert.equal(formatRateLimits(quota('future',window(10,1440))).meterLabel,'1天额度');
 });
 
+test('Plus 双窗口兼容新旧接口和反向顺序，保留各自重置时间与零额度',()=>{
+  const fiveHour={...window(100,300),resetsAt:1793577600};
+  const weekly={...window(52),resetsAt:1793664000};
+  for(const [primary,secondary] of [[fiveHour,weekly],[weekly,fiveHour]]) {
+    const keyed=quota('plus',primary,secondary);
+    const legacy={rateLimits:keyed.rateLimitsByLimitId.codex};
+    for(const response of [keyed,legacy]) {
+      const value=formatRateLimits(response);
+      assert.equal(value.mode,'dual');
+      assert.deepEqual(value.rings.map(({key,label,percent})=>({key,label,percent})),[
+        {key:'five-hour',label:'5h额度',percent:0},
+        {key:'weekly',label:'周额度',percent:48}
+      ]);
+      assert.match(value.rings[0].title,/11\/2 08:00 重置/);
+      assert.match(value.rings[1].title,/11\/3 08:00 重置/);
+    }
+  }
+  const onlyWeekly=formatRateLimits(quota('plus',null,weekly));
+  assert.equal(onlyWeekly.mode,'single');
+  assert.equal(onlyWeekly.percent,48);
+  assert.equal(onlyWeekly.meterLabel,'周额度');
+  const missing=formatRateLimits(quota('plus',null,null));
+  assert.equal(missing.percent,null);
+});
+
 test('无数据和错误数字不会显示健康的旧额度',()=>{
   for(const value of [undefined,null,{},quota('pro',{usedPercent:'52'}),quota('pro',window(NaN))]) {
     assert.equal(formatRateLimits(value).percent,null);
