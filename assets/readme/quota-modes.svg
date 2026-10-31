@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Meter：Plus 五小时与周额度双环，单周窗口显示单环</title>
+  <desc id="desc">组件布局效果示意，使用测试数据。左侧 Plus 双环分别显示五小时剩余 75%、周额度剩余 40%；右侧单环显示周额度剩余 25%。不是 Plus 实机账号截图。</desc>
+  <rect width="1200" height="680" rx="24" fill="#f5f6f5"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif">
+    <text x="48" y="55" font-size="19" font-weight="600" letter-spacing="2" fill="#65737c">CODEX METER / macOS</text>
+    <text x="48" y="127" font-size="54" font-weight="700" letter-spacing="-1" fill="#25313a">五小时、每周，各看各的。</text>
+    <text x="50" y="170" font-size="25" fill="#65737c">留在侧栏的额度圆环，不同窗口分别显示。</text>
+
+    <g id="plus-dual-window">
+      <rect x="40" y="210" width="548" height="398" rx="18" fill="#ffffff" stroke="#dce1e3"/>
+      <text x="70" y="257" font-size="31" font-weight="650" fill="#25313a">Plus · 双环</text>
+      <rect x="70" y="282" width="118" height="300" rx="15" fill="#e8eaeb"/>
+      <g id="dual-badge" transform="translate(91 288) scale(2.2)">
+        <rect width="34" height="130" rx="10" fill="#e8eaeb" stroke="#d8dddf" stroke-width="0.7"/>
+        <circle cx="17" cy="20" r="10.5" fill="none" stroke="#d7e7df" stroke-width="3.3"/>
+        <circle cx="17" cy="20" r="10.5" fill="none" stroke="#31a99c" stroke-width="3.6" stroke-dasharray="49.48 65.97" stroke-linecap="round" transform="rotate(-90 17 20)"/>
+        <text x="17" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#25313a">75%</text>
+        <text x="17" y="54" text-anchor="middle" font-size="7.5" fill="#65737c">5h额度</text>
+        <circle cx="17" cy="80" r="10.5" fill="none" stroke="#efe5cf" stroke-width="3.3"/>
+        <circle cx="17" cy="80" r="10.5" fill="none" stroke="#856db8" stroke-width="3.6" stroke-dasharray="26.39 65.97" stroke-linecap="round" transform="rotate(-90 17 80)"/>
+        <text x="17" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#25313a">40%</text>
+        <text x="17" y="114" text-anchor="middle" font-size="7.5" fill="#65737c">周额度</text>
+      </g>
+      <path d="M200 339 H222" stroke="#bdc7cc" stroke-width="1.5"/>
+      <text x="238" y="338" font-size="25" font-weight="600" fill="#25313a">五小时额度</text>
+      <text x="238" y="383" font-size="37" font-weight="700" fill="#268c81">75% <tspan font-size="22" font-weight="400" fill="#65737c">剩余</tspan></text>
+      <path d="M200 471 H222" stroke="#bdc7cc" stroke-width="1.5"/>
+      <text x="238" y="470" font-size="25" font-weight="600" fill="#25313a">周额度</text>
+      <text x="238" y="515" font-size="37" font-weight="700" fill="#856db8">40% <tspan font-size="22" font-weight="400" fill="#65737c">剩余</tspan></text>
+      <text x="238" y="565" font-size="20" fill="#65737c">两种额度，各有重置时间</text>
+    </g>
+
+    <g id="single-weekly-window">
+      <rect x="612" y="210" width="548" height="398" rx="18" fill="#ffffff" stroke="#dce1e3"/>
+      <text x="642" y="257" font-size="31" font-weight="650" fill="#25313a">单周窗口 · 单环</text>
+      <rect x="642" y="282" width="118" height="300" rx="15" fill="#e8eaeb"/>
+      <g id="single-badge" transform="translate(663 347) scale(2.2)">
+        <rect width="34" height="67" rx="10" fill="#e8eaeb" stroke="#d8dddf" stroke-width="0.7"/>
+        <circle cx="17" cy="20" r="10.5" fill="none" stroke="#efe5cf" stroke-width="3.3"/>
+        <circle cx="17" cy="20" r="10.5" fill="none" stroke="#b46ebe" stroke-width="3.6" stroke-dasharray="16.49 65.97" stroke-linecap="round" transform="rotate(-90 17 20)"/>
+        <text x="17" y="44" text-anchor="middle" font-size="11" font-weight="700" fill="#25313a">25%</text>
+        <text x="17" y="54" text-anchor="middle" font-size="7.5" fill="#65737c">周额度</text>
+      </g>
+      <path d="M772 391 H794" stroke="#bdc7cc" stroke-width="1.5"/>
+      <text x="810" y="390" font-size="25" font-weight="600" fill="#25313a">周额度</text>
+      <text x="810" y="435" font-size="37" font-weight="700" fill="#a462ae">25% <tspan font-size="22" font-weight="400" fill="#65737c">剩余</tspan></text>
+      <text x="810" y="501" font-size="21" fill="#65737c">只返回周额度的账号</text>
+      <text x="810" y="533" font-size="21" fill="#65737c">只显示一个有效窗口</text>
+    </g>
+    <text x="48" y="649" font-size="21" fill="#65737c">效果示意 · 测试数据，非 Plus 实机截图；安装后显示你自己账号的额度。</text>
+  </g>
+</svg>

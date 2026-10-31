@@ -3,10 +3,10 @@
 **把 Codex 剩余额度放在侧栏，工作时一眼就能看到。**
 
 <p align="center">
-  <img src="./assets/readme/codex-sidebar.png" width="126" alt="Codex 实际侧栏截图：帮助按钮上方显示额度圆环，截图中的周额度剩余 25%。">
+  <img src="./assets/readme/quota-modes.svg" width="100%" alt="Plus 双环效果：五小时额度和周额度分别显示；单周窗口账号显示单环。使用测试数据绘制，非 Plus 实机截图。">
 </p>
 
-<p align="center">Codex 侧栏实机截图 · 25% 为截图时的周额度剩余值。</p>
+**Plus 双环：五小时额度 + 周额度，两项分别查看剩余百分比和重置时间。** 上图为按组件布局绘制的测试数据示意；账号只返回周额度时，显示右侧的单环。
 
 <p align="center">
   <a href="https://github.com/dongV-x/codex-meter/releases/tag/v0.9.4-dongv.2"><strong>下载 macOS 安装包</strong></a> ·
@@ -15,9 +15,18 @@
   <a href="./LICENSE">MIT License</a>
 </p>
 
-**支持 Plus 和 Pro，按账号实际返回的额度窗口显示单环或双环。** 上图展示周额度单环；同时返回五小时额度和周额度的账号会显示双环。
+支持 Plus 和 Pro，按账号实际返回的额度窗口显示。鼠标停留或键盘聚焦，可以查看各自的重置时间。
 
-圆环显示的是账号剩余使用额度，安装后会随你的账号数据更新。鼠标停留或键盘聚焦，可以查看各自的额度窗口和重置时间。
+<details>
+<summary><strong>查看 Codex 内的实际侧栏截图</strong></summary>
+
+<p align="center">
+  <img src="./assets/readme/codex-sidebar.png" width="126" alt="用户提供的 Codex 实际侧栏截图：帮助按钮上方显示周额度圆环，截图时剩余 25%。">
+</p>
+
+这张实机截图展示周额度单环，25% 为截图时的读数，不代表你的当前额度。
+
+</details>
 
 ## 安装
 
