@@ -1,0 +1,14 @@
+{
+  "name": "dongv-codex-meter",
+  "version": "0.9.4-dongv.1",
+  "private": true,
+  "description": "dongV 的 Codex 侧栏剩余额度圆环",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test test/*.test.cjs",
+    "install:local": "node manage.cjs install",
+    "status": "node manage.cjs status",
+    "uninstall:local": "node manage.cjs uninstall"
+  }
+}

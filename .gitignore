@@ -1,0 +1,8 @@
+.DS_Store
+.upstream-download/
+node_modules/
+*.log
+dist/
+.env
+.env.*
+!.env.example
